@@ -1,0 +1,131 @@
+section {
+  width: 1160px;
+  margin: auto;
+}
+section .tuiguang {
+  height: 300px;
+  margin-bottom: 30px;
+}
+section .tuiguang .carousel-box {
+  width: 464px;
+  height: 300px;
+  float: left;
+  border-radius: 3px;
+}
+section .tuiguang .carousel-box .carousel-module {
+  overflow: hidden;
+}
+section .tuiguang .carousel-box .carousel-module .carousel-ul {
+  width: 1392px;
+  padding: 0;
+  position: relative;
+  left: 0px;
+}
+section .tuiguang .carousel-box .carousel-module .carousel-ul li {
+  float: left;
+  display: inline;
+}
+section .tuiguang .carousel-box .carousel-module .carousel-ul li img {
+  width: 464px;
+  height: 300px;
+  border-radius: 3px;
+}
+section .tuiguang .carousel-box .carousel-module .carousel-biaoqian li a div {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+  border: solid #eee 2px;
+  border-radius: 100% ;
+  position: relative;
+  top: -25px;
+  left: -40px;
+  float: left;
+}
+section .tuiguang .recommend-module .groom-module {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  height: 145px;
+  overflow: hidden;
+  float: left;
+  border-radius: 3px;
+}
+section .tuiguang .recommend-module .groom-module .card-mark {
+  width: 217px;
+  height: 145px;
+  padding-left: 10px;
+  padding-right: 5px;
+  position: relative;
+  top: -22px;
+  background-color: rgba(64, 64, 64, 0.5);
+}
+section .tuiguang .recommend-module .groom-module .card-mark .title {
+  color: #eee;
+}
+section .tuiguang .recommend-module .groom-module .card-mark .gtime {
+  transition: color 1s;
+  color: #333;
+}
+section .tuiguang .recommend-module .groom-module .card-mark .play {
+  transition: color 1s;
+  color: #333;
+}
+section .tuiguang .recommend-module .groom-module:hover a {
+  text-decoration: none;
+}
+section .tuiguang .recommend-module .groom-module:hover a .card-mark {
+  padding-top: 20px;
+  top: -145px;
+}
+section .tuiguang .recommend-module .groom-module:hover a .card-mark .gtime {
+  color: #999;
+}
+section .tuiguang .recommend-module .groom-module:hover a .card-mark .play {
+  color: #999;
+}
+section .tuijian {
+  height: 212px;
+}
+section .tuijian .tuijian_title {
+  width: 119px;
+  height: 30px;
+  margin-bottom: 10px;
+  background-image: url("../images/tuijian.png");
+}
+section .tuijian .tuijian_shuju .tuijian_kuang {
+  padding: 0;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong {
+  width: 200px;
+  height: 172px;
+  float: left;
+  margin-right: 15px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a {
+  text-decoration: none;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a img {
+  border-radius: 3px;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a .nr_xx {
+  width: 200px;
+  height: 47px;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a .nr_xx .title {
+  transition: color 0.5s;
+  padding-top: 3px;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a:hover {
+  text-decoration: none;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a:hover .nr_xx .title {
+  color: #3399FF;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_guanggao {
+  width: 300px;
+  height: 172px;
+  float: left;
+  border-radius: 3px;
+  overflow: hidden;
+}

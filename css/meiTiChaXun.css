@@ -1,0 +1,141 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  color: #222;
+}
+a {
+  color: #222;
+  font: 14px Helvetica Neue, Helvetica, Arial, Microsoft Yahei, Hiragino Sans GB, Heiti SC, WenQuanYi Micro Hei, sans-serif;
+}
+header {
+  width: 100%;
+}
+header .userInfo-img {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  background-position: top center;
+  background-image: url("../images/logo_01.jpg");
+  -webkit-filter: blur(4px);
+}
+header .userInfo-gai {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+header .userInfo {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  position: relative;
+}
+header .userInfo .weibo {
+  height: 50px;
+  width: 40%;
+  margin-left: 10px;
+  line-height: 50px;
+  float: left;
+}
+header .userInfo .weibo .weiboname {
+  display: none;
+}
+header .userInfo .weibo .logoname img {
+  width: 80%;
+}
+header .userInfo .userZhongxin {
+  float: right;
+  margin-right: 10px;
+  line-height: 50px;
+  width: 50%;
+}
+header .userInfo .userZhongxin .kongge {
+  width: 5%;
+  height: 50px;
+}
+header .userInfo .userZhongxin li {
+  float: left;
+}
+header .userInfo .userZhongxin li .shurukuang {
+  display: none;
+}
+header .userInfo .userZhongxin li .sousuotubiao {
+  margin-right: 10px;
+}
+header .userInfo .userZhongxin .usertu {
+  float: right;
+}
+header .userInfo .userZhongxin .username {
+  display: none;
+}
+header .logo {
+  display: none;
+}
+header .nav {
+  width: 100%;
+  margin: auto;
+  margin-top: 20px;
+}
+header .nav .nav_num {
+  padding: 0;
+  width: 70%;
+  height: 48px;
+  float: left;
+  overflow: hidden;
+}
+header .nav .nav_num .num {
+  float: left;
+  width: 48px;
+  height: 48px;
+}
+header .nav .nav_num .num a {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  display: block;
+}
+header .nav .nav_num .num .num_tu {
+  margin-top: 10px;
+}
+header .nav .nav_num .num .num_tu span {
+  background-color: #222;
+  color: #eee;
+  padding-left: 2px;
+  padding-right: 2px;
+  border-radius: 3px;
+}
+header .nav .nav_num .xiaoshuo {
+  display: none;
+  width: 100px;
+  height: 48px;
+  background-color: #a1c913;
+  float: right;
+  text-align: center;
+  border-radius: 3px;
+}
+header .nav .nav_num .xiaoshuo img {
+  width: 95px;
+  margin-top: 5px;
+}
+header .nav .nav_num .num_kongge {
+  width: 0%;
+}
+header .nav .jiantou {
+  width: 20px;
+  height: 48px;
+  line-height: 48px;
+}
+header .nav .sj_xszq {
+  width: 20%;
+  height: 44px;
+  float: right;
+  margin-right: 10px;
+  background-color: #a1c913;
+  border-radius: 3px;
+  line-height: 40px;
+}
+header .nav .sj_xszq img {
+  width: 100%;
+  margin-top: 3px;
+}

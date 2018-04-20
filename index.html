@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>尖局团春-最好的相声网站</title>
+    <link href="css/bootrtap-css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/vue.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link media="(max-width:768px)" rel="stylesheet" type="text/css" href="css/meiTiChaXun.css">
+    <link media="(min-width:769px)" rel="stylesheet" type="text/css" href="css/header.css">
+    <link media="(max-width:768px)" rel="stylesheet" type="text/css" href="css/sectionsj.css">
+    <link media="(min-width:769px)" rel="stylesheet" type="text/css" href="css/section.css">
+</head>
+<body>
+    <header id="headerApp">
+        <div class="userInfo-img"></div>
+        <div class="userInfo-gai"></div>
+        <div class="userInfo">
+            <div class="weibo">
+                <a href="#" class="weiboname">路人甲制造微博</a>
+                <a href="#" class="logoname"><img src="images/jianju_03.png" alt=""></a>
+            </div>
+            <div class="userZhongxin">
+            <ul>
+                <li>
+                    <input type="text" class="form-control shurukuang" id="guanjianzi" placeholder="关键字输入">
+                </li>
+                <li>
+                    <a href="#"><img class="sousuotubiao" src="images/sousuo.png" alt=""></a>
+                </li>
+                <li class="kongge"></li>
+                <li><a href="#">历史记录</a></li>
+                <li class="kongge"></li>
+                <li class="username"><a href="#">个人中心</a></li>
+                <li class="usertu"><span class="glyphicon glyphicon-user"></span>
+                </li>
+            </ul>
+            </div>
+        </div>
+        <div class="logo"></div>
+        <nav class="nav">
+            <ul class="nav_num"  v-bind:style="[dheight]">
+                <li class="num">
+                    <a href="#">
+                        <div>
+                            <img src="images/home.png" alt="">
+                        </div>
+                        <div class="num_name">
+                            首页
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="num">
+                    <a href="#">
+                        <div class="num_tu">
+                            <span>{{zx}}</span>
+                        </div>
+                        <div class="num_name">
+                            最新
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="num">
+                    <a href="#">
+                        <div class="num_tu">
+                            <span>{{gdg}}</span>
+                        </div>
+                        <div class="num_name">
+                            郭德纲
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="num">
+                    <a href="#">
+                        <div class="num_tu">
+                            <span>{{yyp}}</span>
+                        </div>
+                        <div class="num_name">
+                            岳云鹏
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="num">
+                    <a href="#">
+                        <div class="num_tu">
+                            <span>{{zyl}}</span>
+                        </div>
+                        <div class="num_name">
+                            张云雷
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="num">
+                    <a href="#">
+                        <div class="num_tu">
+                            <span>{{mht}}</span>
+                        </div>
+                        <div class="num_name">
+                            孟鹤堂
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="num">
+                    <a href="#">
+                        <div class="num_tu">
+                            <span>{{zhl}}</span>
+                        </div>
+                        <div class="num_name">
+                            张鹤伦
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="num">
+                    <a href="#">
+                        <div class="num_tu">
+                            <span>{{xw}}</span>
+                        </div>
+                        <div class="num_name">
+                            相妄
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="num">
+                    <a href="#">
+                        <div class="num_tu">
+                            <span>{{jm}}</span>
+                        </div>
+                        <div class="num_name">
+                            节目
+                        </div>
+                    </a>
+                </li>
+                <li class="num num_kongge"></li>
+                <li class="xiaoshuo">
+                    <a href="#"><img class="xiaoshuo_1" src="images/xiaoshuo_01.png" alt=""></a>
+                </li>
+
+            </ul>
+            <div v-on:click="say" class="jiantou glyphicon glyphicon-chevron-down">
+
+            </div>
+            <div class="sj_xszq">
+                <a href="#"><img src="images/xiaoshuo_01.png" alt=""></a>
+            </div>
+        </nav>
+
+    </header>
+    <section id="sectionApp">
+    <div class="tuiguang">
+         <div class="carousel-box">
+            <div class="carousel-module">
+                <ul class="carousel-ul">
+                    <li>
+                        <div>
+                            <a href="#"><img src="images/section/4bb9477c4b883dcb1e19e17c0ae75435.jpg" alt="" /></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#"><img src="images/section/05a46f5d56cf0ba0f4f192ce59b52fd8.jpg" alt="" /></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <a href="#"><img src="images/section/6cdf299dc4acc1d7b63fe4e042bd880a.jpg" alt="" /></a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="carousel-biaoqian">
+                    <li>
+                        <a href="">
+                            <div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="recommend-module">
+            <div class="groom-module">
+                <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
+                    <img src="images/imgt.jpg" alt="">
+                    <div class="card-mark">
+                        <p class="title">【京紫点评】看好的动画，就像与作品谈恋爱</p>
+                        <p class="gtime">更新时间：2018/4/18</p>
+                        <p class="play">播放：2015次</p>
+                    </div>
+                </a>
+            </div>
+            <div class="groom-module">
+                <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
+                    <img src="images/imgt.jpg" alt="">
+                    <div class="card-mark">
+                        <p class="title">【京紫点评】看好的动画，就像与作品谈恋爱</p>
+                        <p class="gtime">更新时间：2018/4/18</p>
+                        <p class="play">播放：2015次</p>
+                    </div>
+                </a>
+            </div>
+            <div class="groom-module">
+                <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
+                    <img src="images/imgt.jpg" alt="">
+                    <div class="card-mark">
+                        <p class="title">【京紫点评】看好的动画，就像与作品谈恋爱</p>
+                        <p class="gtime">更新时间：2018/4/18</p>
+                        <p class="play">播放：2015次</p>
+                    </div>
+                </a>
+            </div>
+            <div class="groom-module">
+                <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
+                    <img src="images/imgt.jpg" alt="">
+                    <div class="card-mark">
+                        <p class="title">【京紫点评】看好的动画，就像与作品谈恋爱</p>
+                        <p class="gtime">更新时间：2018/4/18</p>
+                        <p class="play">播放：2015次</p>
+                    </div>
+                </a>
+            </div>
+            <div class="groom-module">
+                <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
+                    <img src="images/imgt.jpg" alt="">
+                    <div class="card-mark">
+                        <p class="title">【京紫点评】看好的动画，就像与作品谈恋爱</p>
+                        <p class="gtime">更新时间：2018/4/18</p>
+                        <p class="play">播放：2015次</p>
+                    </div>
+                </a>
+            </div>
+            <div class="groom-module">
+                <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
+                    <img src="images/imgt.jpg" alt="">
+                    <div class="card-mark">
+                        <p class="title">【京紫点评】看好的动画，就像与作品谈恋爱</p>
+                        <p class="gtime">更新时间：2018/4/18</p>
+                        <p class="play">播放：2015次</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div class="tuijian">
+        <h1 class="tuijian_title"></h1>
+        <div class="tuijian_shuju">
+            <ul class="tuijian_kuang">
+                <li class="tuijian_neirong"><a href="#"><img src="images/imgt.jpg" alt="" width="200" height="125">
+                <div class="nr_xx">
+                    <p class="title">【京紫点评】看好的动画，就像与作品谈恋爱</p>
+                        <p class="gtime">更新时间：2018/4/18</p>
+                        <p class="play">播放：2015次</p>
+                </div>
+                </a></li>
+                <li class="tuijian_neirong"><a href="#"><img src="images/imgt.jpg" alt="" width="200" height="125">
+                <div class="nr_xx">
+                    <p class="title">【京紫点评】看好的动画，就像与作品谈恋爱</p>
+                        <p class="gtime">更新时间：2018/4/18</p>
+                        <p class="play">播放：2015次</p>
+                </div>
+                </a></li>
+                <li class="tuijian_neirong"><a href="#"><img src="images/imgt.jpg" alt="" width="200" height="125">
+                <div class="nr_xx">
+                    <p class="title">【京紫点评】看好的动画，就像与作品谈恋爱</p>
+                        <p class="gtime">更新时间：2018/4/18</p>
+                        <p class="play">播放：2015次</p>
+                </div>
+                </a></li>
+                <li class="tuijian_neirong"v><a href="#"><img src="images/imgt.jpg" alt="" width="200" height="125">
+                <div class="nr_xx">
+                    <p class="title">【京紫点评】看好的动画，就像与作品谈恋爱</p>
+                        <p class="gtime">更新时间：2018/4/18</p>
+                        <p class="play">播放：2015次</p>
+                </div>
+                </a></li>
+                <li class="tuijian_guanggao"><a href="#"><img src="images/imgt.jpg" alt="" width="300" height="172"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    </section>
+    <div id="shiyan">
+
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootrtap-js/bootstrap.min.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/section.js"></script>
+</body>
+
+</html>

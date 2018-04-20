@@ -1,0 +1,116 @@
+section {
+  width: 97%;
+  margin: auto;
+}
+section .tuiguang {
+  height: 100%;
+}
+section .tuiguang .carousel-box {
+  display: none;
+}
+section .tuiguang .recommend-module {
+  width: 100%;
+  margin: auto;
+}
+section .tuiguang .recommend-module .groom-module {
+  width: 48%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 5px;
+  overflow: hidden;
+  float: left;
+  border-radius: 3px;
+}
+section .tuiguang .recommend-module .groom-module img {
+  width: 100%;
+}
+section .tuiguang .recommend-module .groom-module .card-mark {
+  width: 100%;
+  height: 70px;
+  padding-left: 10px;
+  padding-right: 5px;
+  position: relative;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow: hidden;
+  background-color: rgba(64, 64, 64, 0.5);
+}
+section .tuiguang .recommend-module .groom-module .card-mark .title {
+  color: #eee;
+  height: 41px;
+  overflow: hidden;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+section .tuiguang .recommend-module .groom-module .card-mark .gtime {
+  color: #333;
+  font-size: 12px;
+}
+section .tuiguang .recommend-module .groom-module .card-mark .play {
+  color: #333;
+}
+section .tuijian {
+  width: 100%;
+  margin: auto;
+  float: left;
+}
+section .tuijian .tuijian_title {
+  width: 119px;
+  height: 30px;
+  margin-bottom: 10px;
+  margin-left: 3%;
+  background-image: url("../images/tuijian.png");
+}
+section .tuijian .tuijian_shuju .tuijian_kuang {
+  padding: 0;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong {
+  width: 48%;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 5px;
+  float: left;
+  border-radius: 3px;
+  overflow: hidden;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a {
+  text-decoration: none;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a .nr_xx {
+  width: 100%;
+  height: 70px;
+  padding-left: 10px;
+  padding-right: 5px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow: hidden;
+  background-color: rgba(64, 64, 64, 0.5);
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a .nr_xx .title {
+  color: #eee;
+  height: 41px;
+  transition: color 0.5s;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a .nr_xx .gtime {
+  color: #333;
+  font-size: 12px;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a:hover {
+  text-decoration: none;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a:hover .nr_xx .title {
+  color: #3399FF;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_guanggao {
+  width: 100%;
+  height: 172px;
+  float: left;
+  border-radius: 3px;
+  overflow: hidden;
+  text-align: center;
+}
+section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_guanggao img {
+  border-radius: 3px;
+}
