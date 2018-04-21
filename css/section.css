@@ -129,3 +129,70 @@ section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_guanggao {
   border-radius: 3px;
   overflow: hidden;
 }
+section .hengfugg {
+  width: 1160px;
+  height: 150px;
+  margin-bottom: 20px;
+  background-color: #902;
+}
+section .zq {
+  height: 405px;
+  margin-bottom: 20px;
+}
+section .zq .gszq_title {
+  width: 119px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+section .zq .gsbt {
+  background-image: url("../images/gszq.png");
+}
+section .zq .yypbt {
+  background-image: url("../images/xyzq.png");
+}
+section .zq .xwbt {
+  background-image: url("../images/xwzq.png");
+}
+section .zq .gszs {
+  float: left;
+}
+section .zq .gszs .gszq_kuang {
+  padding: 0;
+  width: 860px;
+}
+section .zq .gszs .gszq_kuang .gszq_neirong {
+  width: 200px;
+  height: 172px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+section .zq .gszs .gszq_kuang .gszq_neirong a {
+  text-decoration: none;
+}
+section .zq .gszs .gszq_kuang .gszq_neirong a img {
+  border-radius: 3px;
+}
+section .zq .gszs .gszq_kuang .gszq_neirong a .nr_xx {
+  width: 200px;
+  height: 47px;
+}
+section .zq .gszs .gszq_kuang .gszq_neirong a .nr_xx .title {
+  transition: color 0.5s;
+  padding-top: 3px;
+}
+section .zq .gszs .gszq_kuang .gszq_neirong a:hover {
+  text-decoration: none;
+}
+section .zq .gszs .gszq_kuang .gszq_neirong a:hover .nr_xx .title {
+  color: #3399FF;
+}
+section .zq .ph {
+  width: 300px;
+  height: 365px;
+  background-color: #eee;
+  border-radius: 3px;
+  float: left;
+}
