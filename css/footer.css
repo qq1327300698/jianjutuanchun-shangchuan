@@ -5,6 +5,7 @@ footer {
   text-align: center;
   background-color: #999;
   padding-top: 25px;
+  float: left;
 }
 footer .footer_nr p {
   color: #eee;
