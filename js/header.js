@@ -25,19 +25,27 @@ return y;
 // function geshu(n){
 //     get_nextSibling(xmlDoc.getElementsByTagName(""))
 // }
-arr=xmlDoc.getElementsByTagName("gdg")[0].getAttribute("data").split("/");
-var zxs=0;
+// arr=xmlDoc.getElementsByTagName("gdg")[0].getAttribute("data").split("/");
+// var zxs=0;
+var zxs=0,z;
 function zuixin(jname){
     var myDate=new Date();
     var zdts=myDate.getDate()-7;
     var i=0,tian=0;
-    for(i;i<xmlDoc.getElementsByTagName(jname).length;i++){
-        arr=xmlDoc.getElementsByTagName(jname)[i].getAttribute("data").split("/");
-        // alert(Number(arr[1]));
+    var s;
+    s=xmlDoc.getElementsByTagName(jname)[0].childNodes[1].nodeName;
+    // alert(s);
+    for(i;i<xmlDoc.getElementsByTagName(s)[0].childNodes.length;i++){
+        if(xmlDoc.getElementsByTagName(s)[0].childNodes[i].nodeType==1){
+            arr=xmlDoc.getElementsByTagName(s)[0].childNodes[i].getAttribute("data").split("/");
+        // alert(xmlDoc.getElementsByTagName(s)[0].childNodes[1].nodeType);
+        // alert(Number(arr[2]));
         // alert(zdts);
-        if(Number(arr[1])>zdts)
+        if(Number(arr[2])>zdts)
             // alert(message);
             tian++;
+        }
+
     }
     zxs+=tian;
     // alert(zxs);
@@ -48,12 +56,12 @@ new Vue({
     data:{
         dheight: {height:"48px"},
         gdg:zuixin("gdg"),
-        yyp:zuixin("gdg"),
-        zyl:zuixin("gdg"),
-        mht:zuixin("gdg"),
-        zhl:zuixin("gdg"),
-        xw:zuixin("gdg"),
-        jm:zuixin("gdg"),
+        yyp:zuixin("yyp"),
+        zyl:1,
+        mht:1,
+        zhl:1,
+        xw:1,
+        jm:1,
         zx:zxs,
     },
     methods:{

@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <note>
     <gdg>
-        <date se="123">
-            2018/4/23
-        </date>
-        <zhaopian>
-            www.sougou.com
-        </zhaopian>
-        <lianjie>
-            www.baidu.com
-        </lianjie>
+        <kwjd>
+            <imgs>../../images/imgt.jpg</imgs>
+        </kwjd>
     </gdg>
 </note>

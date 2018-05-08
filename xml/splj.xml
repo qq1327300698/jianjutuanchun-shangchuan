@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <note>
-    <gdg data="4/17/2018">
-        www.baidu.com
+    <gdg>
+        <kwjd>
+            <lj data="2017/4/23">www.baidu.com</lj>
+            <lj data="2017/4/23">www.baidu.com</lj>
+            <lj data="2017/4/15">www.baidu.com</lj>
+            <lj data="2017/4/15">www.baidu.com</lj>
+            <lj data="2017/4/23">www.baidu.com</lj>
+            <lj data="2017/4/23">www.baidu.com</lj>
+            <lj data="2017/4/23">www.baidu.com</lj>
+        </kwjd>
     </gdg>
-    <gdg data="4/16/2018">
-        www.sougou.com
-    </gdg>
-    <gdg data="4/9/2018">
-        www.mingtian.com
-    </gdg>
-    <gdg data="4/9/2018">
-        www.mingtian.com
-    </gdg>
-    <gdg data="4/11/2018">
-        www.mingtian.com
-    </gdg>
-    <gdg data="4/11/2018">
-        www.mingtian.com
-    </gdg>
-    <gdg data="4/11/2018">
-        www.mingtian.com
-    </gdg>
+    <yyp>
+        <xazc>
+            <lj data="2017/4/23">www.sougou.com</lj>
+            <lj data="2017/4/23">www.sougou.com</lj>
+            <lj data="2017/4/15">www.sougou.com</lj>
+            <lj data="2017/4/23">www.sougou.com</lj>
+        </xazc>
+    </yyp>
 </note>
