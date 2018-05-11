@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>{shipingtitle}</title>
+    <link href="../../../css/bootrtap-css/bootstrap.css" rel="stylesheet">
+    <link href="../../../css/vue.css" rel="stylesheet" type="text/css">
+    <link href="../../../css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="../../../css/meiTiChaXun.css" media="(max-width:768px)" rel="stylesheet" type="text/css">
+    <link href="../../../css/header.css" media="(min-width:769px)" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="../../../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/shipingSection.css">
+</head>
+<body>
+     <header id="headerApp">
+            <div class="userInfo-img">
+            </div>
+            <div class="userInfo-gai">
+            </div>
+            <div class="userInfo">
+                <div class="weibo">
+                    <a class="weiboname" href="#">
+                        路人甲制造微博
+                    </a>
+                    <a class="logoname" href="#">
+                        <img alt="" src="../../../images/jianju_03.png"/>
+                    </a>
+                </div>
+                <div class="userZhongxin">
+                    <ul>
+                        <li>
+                            <input class="form-control shurukuang" id="guanjianzi" placeholder="关键字输入" type="text">
+                            </input>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" class="sousuotubiao" src="../../../images/sousuo.png"/>
+                            </a>
+                        </li>
+                        <li class="kongge">
+                        </li>
+                        <li>
+                            <a href="#">
+                                历史记录
+                            </a>
+                        </li>
+                        <li class="kongge">
+                        </li>
+                        <li class="username">
+                            <a href="#">
+                                个人中心
+                            </a>
+                        </li>
+                        <li class="usertu">
+                            <span class="glyphicon glyphicon-user">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav_num" v-bind:style="[dheight]">
+                    <li class="num">
+                        <a href="#">
+                            <div>
+                                <img alt="" src="../../../images/home.png">
+                                </img>
+                            </div>
+                            <div class="num_name">
+                                首页
+                            </div>
+                        </a>
+                    </li>
+                    <li class="num num_kongge">
+                    </li>
+                    <li class="num">
+                        <a href="#">
+                            <div class="num_tu">
+                                <span>
+                                    {{zx}}
+                                </span>
+                            </div>
+                            <div class="num_name">
+                                最新
+                            </div>
+                        </a>
+                    </li>
+                    <li class="num num_kongge">
+                    </li>
+                    <li class="num">
+                        <a href="#">
+                            <div class="num_tu">
+                                <span>
+                                    {{gdg}}
+                                </span>
+                            </div>
+                            <div class="num_name">
+                                郭德纲
+                            </div>
+                        </a>
+                    </li>
+                    <li class="num num_kongge">
+                    </li>
+                    <li class="num">
+                        <a href="#">
+                            <div class="num_tu">
+                                <span>
+                                    {{yyp}}
+                                </span>
+                            </div>
+                            <div class="num_name">
+                                岳云鹏
+                            </div>
+                        </a>
+                    </li>
+                    <li class="num num_kongge">
+                    </li>
+                    <li class="num">
+                        <a href="#">
+                            <div class="num_tu">
+                                <span>
+                                    {{zyl}}
+                                </span>
+                            </div>
+                            <div class="num_name">
+                                张云雷
+                            </div>
+                        </a>
+                    </li>
+                    <li class="num num_kongge">
+                    </li>
+                    <li class="num">
+                        <a href="#">
+                            <div class="num_tu">
+                                <span>
+                                    {{mht}}
+                                </span>
+                            </div>
+                            <div class="num_name">
+                                孟鹤堂
+                            </div>
+                        </a>
+                    </li>
+                    <li class="num num_kongge">
+                    </li>
+                    <li class="num">
+                        <a href="#">
+                            <div class="num_tu">
+                                <span>
+                                    {{zhl}}
+                                </span>
+                            </div>
+                            <div class="num_name">
+                                张鹤伦
+                            </div>
+                        </a>
+                    </li>
+                    <li class="num num_kongge">
+                    </li>
+                    <li class="num">
+                        <a href="#">
+                            <div class="num_tu">
+                                <span>
+                                    {{xw}}
+                                </span>
+                            </div>
+                            <div class="num_name">
+                                相妄
+                            </div>
+                        </a>
+                    </li>
+                    <li class="num num_kongge">
+                    </li>
+                    <li class="num">
+                        <a href="#">
+                            <div class="num_tu">
+                                <span>
+                                    {{jm}}
+                                </span>
+                            </div>
+                            <div class="num_name">
+                                节目
+                            </div>
+                        </a>
+                    </li>
+                    <li class="num num_kongge">
+                    </li>
+                    <li class="xiaoshuo">
+                        <a href="#">
+                            <img alt="" class="xiaoshuo_1" src="../../../images/xiaoshuo_01.png"/>
+                        </a>
+                    </li>
+                </ul>
+                <div class="jiantou glyphicon glyphicon-chevron-down" v-on:click="say">
+                </div>
+                <div class="sj_xszq">
+                    <a href="#">
+                        <img alt="" src="../../../images/xiaoshuo_01.png"/>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <section id="sectionApp">
+            <div class="play_zs">
+                <div class="play-box">
+                <i style='display:none'>http://www.iqiyi.com/v_19rr9lhuyk.html</i><i style='display:none'>5</i>
+                <iframe src="" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no" id="player_iframe" allowfullscreen="true"></iframe>
+                <div class="play_xuanji scrollbar">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="biaoti-lanmu">
+                <div class="play_title"><a href='../' id='kwjd'>坑王驾到</a><span>探地穴（五）灵蛛反目前缘散 德龙洒泪天伦别</span></div>
+                <div class="play_guanggao"></div>
+            </div>
+            <div class="xianlu-box">
+                <span>无法播放？请使用浏览器的“高速模式”观看 或 试试切换线路</span>
+                <ul>
+                    <li class="bjys">原链</li>
+                </ul>
+            </div>
+            </div>
+
+            <div class="gengduotuijian">
+                <div class="tuijianbiaoti">
+                    <h1>更多推荐</h1>
+                    <span><a href="#">更多</a></span>
+                </div>
+                <div class="tuijiannr">
+                    <ul>
+                        <li><a href="#"><img src="images/imgt.jpg" alt="" width="160px" height="215"></a></li>
+                        <li><a href="#"><img src="images/imgt.jpg" alt="" width="160px" height="215"></a></li>
+                        <li><a href="#"><img src="images/imgt.jpg" alt="" width="160px" height="215"></a></li>
+                        <li><a href="#"><img src="images/imgt.jpg" alt="" width="160px" height="215"></a></li>
+                        <li><a href="#"><img src="images/imgt.jpg" alt="" width="160px" height="215"></a></li>
+                        <li><a href="#"><img src="images/imgt.jpg" alt="" width="160px" height="215"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_nr">
+               <p>路人甲制造出品，一定是特莫精品。</p>
+            <p>所有内容转载自网络，侵权必删。</p>
+            </div>
+        </footer>
+        <script src="../../../js/jquery-3.3.1.min.js">
+        </script>
+        <script src="../../../js/bootrtap-js/bootstrap.min.js">
+        </script>
+        <script src="../../../js/vue.min.js">
+        </script>
+        <script src="../../../js/headerSC.js">
+        </script>
+        <script src="../../../js/shujukz.js">
+        </script>
+        <script src="../../../js/FXshiping.js"></script>
+</body>
+</html>

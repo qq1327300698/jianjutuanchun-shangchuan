@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>丑娘娘——尖局团春——路人甲制造</title>
+    <link href="../../css/bootrtap-css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/jiemuHaerder.css">
+    <link rel="stylesheet" type="text/css" href="../../css/jiemuSection.css">
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../css/vue.css">
+</head>
+<body>
+    <header id="headerApp">
+            <div class="userInfo-img">
+            </div>
+            <div class="userInfo-gai">
+            </div>
+            <div class="userInfo">
+                <div class="weibo">
+                    <a class="weiboname" href="http://jianjutuanchun.com">
+                        主页
+                    </a>
+                    <a class="logoname" href="#">
+                        <img alt="" src="../../images/jianju_03.png"/>
+                    </a>
+                </div>
+                <div class="userZhongxin">
+                    <ul>
+                        <li>
+                            <input class="form-control shurukuang" id="guanjianzi" placeholder="关键字输入" type="text">
+                            </input>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" class="sousuotubiao" src="../../images/sousuo.png"/>
+                            </a>
+                        </li>
+                        <li class="kongge">
+                        </li>
+                        <li>
+                            <a href="#">
+                                历史记录
+                            </a>
+                        </li>
+                        <li class="kongge">
+                        </li>
+                        <li class="username">
+                            <a href="#">
+                                个人中心
+                            </a>
+                        </li>
+                        <li class="usertu">
+                            <span class="glyphicon glyphicon-user">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo">
+                <div class="zhuantinr">
+                    <div class="zhuantitu"><img src='http://raw.githubusercontent.com/qq1327300698/jianjutuanchun-tu/master/gdg/cnn/cnn_main.jpg' id='cnn' width="240" height="290"></div>
+                    <div class="zhuantibiaoti"><h1>丑娘娘</h1><span v-for="value in jiemubq">{{value}}</span></div>
+                    <div class="zhuantitime"><span>更新时间：2018/5/3</span><span>点击量：没做好</span></div>
+                    <div class="zhuantijianjie"><p>简介：春秋战国，齐国有一位上通天文，下知地理，中晓人和的一位正宫娘娘，辅佐大齐，抱一方平安。</p></div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav_num">
+                    <li class="num zuopinxqDJ">
+                        <a href="#">
+                            <div class="num_name yanse">
+                                作品详情
+                            </div>
+                        </a>
+                    </li>
+                    <li class="num num_kongge">
+                    </li>
+                    <li class="num">
+                        <a href="#">
+                            <div class="num_name">
+                                相关视频
+                            </div>
+                        </a>
+                    </li>
+                    <li class="num num_kongge">
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="xuanjiBox">
+                <div class="xuanjiji">
+                    <ul>
+                        <li><a href="#">第一季</a></li>
+                    </ul>
+                </div>
+                <div class="xuanjilei">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="xianjinr">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="gengduotuijian">
+                <div class="tuijianbiaoti">
+                    <h1>更多推荐</h1>
+                    <span><a href="#">更多</a></span>
+                </div>
+                <div class="tuijiannr">
+                    <ul>
+                        <li><a href="#"><img src="images/imgt.jpg" alt="" width="160px" height="215"></a></li>
+                        <li><a href="#"><img src="images/imgt.jpg" alt="" width="160px" height="215"></a></li>
+                        <li><a href="#"><img src="images/imgt.jpg" alt="" width="160px" height="215"></a></li>
+                        <li><a href="#"><img src="images/imgt.jpg" alt="" width="160px" height="215"></a></li>
+                        <li><a href="#"><img src="images/imgt.jpg" alt="" width="160px" height="215"></a></li>
+                        <li><a href="#"><img src="images/imgt.jpg" alt="" width="160px" height="215"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_nr">
+               <p>路人甲制造出品，一定是特莫精品。</p>
+            <p>所有内容转载自网络，侵权必删。</p>
+            </div>
+        </footer>
+        <script src="../../js/vue.min.js"></script>
+        <script src="../../js/jquery-3.3.1.min.js"></script>
+        <script src="../../js/jiemu.js"></script>
+</body>
+</html>
