@@ -33,9 +33,9 @@ function caiFenBq(){
     return arr;
 };
 
-function shengchengNR(lj,bt,js,img){
+function shengchengNR(lj,bt,js,img,weizhi){
     $(".xianjinr ul").append(function(j,index){
-        return '<li style="display:none"><a href="http://'+lj+'"><img src="'+img+'" width="100" height="60"><h1>'+bt+'</h1><h5>'+js+'</h5></a></li>';
+        return '<li style="display:none"><a href="./'+weizhi+'"><img src="'+img+'" width="100" height="60"><h1>'+bt+'</h1><h5>'+js+'</h5></a></li>';
 
     });
 }
@@ -49,8 +49,8 @@ $(document).ready(function(){
                 d=xmlDoc.getElementsByTagName(s)[0].childNodes[i].childNodes[3].childNodes[0].nodeValue;
                 js=xmlDoc.getElementsByTagName(s)[0].childNodes[i].childNodes[5].childNodes[0].nodeValue;
                 bt=xmlDoc.getElementsByTagName(s)[0].childNodes[i].childNodes[9].childNodes[0].nodeValue;
-
-            shengchengNR(lj,bt,js,img);
+                weizhi=Math.floor(i/2)+1;
+            shengchengNR(lj,bt,js,img,weizhi);
         }
         if(i==xmlDoc.getElementsByTagName(s)[0].childNodes.length){
                 // alert(Math.floor(d/10));

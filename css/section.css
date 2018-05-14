@@ -49,6 +49,10 @@ section .tuiguang .recommend-module .groom-module {
   float: left;
   border-radius: 3px;
 }
+section .tuiguang .recommend-module .groom-module img {
+  width: 217px;
+  height: 145px;
+}
 section .tuiguang .recommend-module .groom-module .card-mark {
   width: 217px;
   height: 145px;

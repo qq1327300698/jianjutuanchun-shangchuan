@@ -23,6 +23,7 @@ section .tuiguang .recommend-module .groom-module {
 }
 section .tuiguang .recommend-module .groom-module img {
   width: 100%;
+  height: 108px;
 }
 section .tuiguang .recommend-module .groom-module .card-mark {
   width: 100%;
