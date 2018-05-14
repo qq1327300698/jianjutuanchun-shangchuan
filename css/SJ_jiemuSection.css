@@ -1,124 +1,80 @@
 section {
   background-color: #eee;
-  padding-bottom: 10px;
 }
-section .play_zs {
-  width: 1160px;
+section .xuanjiBox {
+  width: 100%;
   margin: auto;
-  padding: 25px;
-  padding-right: 10px;
+  border-radius: 3px;
   background-color: #fff;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+section .xuanjiBox .xuanjiji ul {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+section .xuanjiBox .xuanjiji ul li {
+  width: 50px;
+  height: 25px;
   border-radius: 3px;
-}
-section .play_zs .play-box {
-  width: 1126px;
-  height: 500px;
-  margin-bottom: 10px;
-}
-section .play_zs .play-box iframe {
-  width: 900px;
-  height: 500px;
-  margin-right: 10px;
-  float: left;
-}
-section .play_zs .play-box .play_xuanji {
-  width: 216px;
-  height: 500px;
-  float: left;
-  overflow: hidden;
-}
-section .play_zs .play-box .play_xuanji ul {
-  width: 200px;
-  height: 60px;
-  padding: 0px;
-  margin: 0px;
-}
-section .play_zs .play-box .play_xuanji ul li {
-  width: 208px;
-  height: 60px;
-  border-radius: 3px;
-  float: left;
-  margin-right: 26px;
-  margin-bottom: 10px;
   background-color: #eee;
+  border: #ddd solid 1px;
+  text-align: center;
+  line-height: 25px;
+  margin-left: 3%;
 }
-section .play_zs .play-box .play_xuanji ul li a img {
-  float: left;
-  margin-right: 10px;
-}
-section .play_zs .play-box .play_xuanji ul li a h1 {
+section .xuanjiBox .xuanjiji ul li a {
   font-size: 12px;
 }
-section .play_zs .play-box .play_xuanji ul li a h5 {
+section .xuanjiBox .xuanjilei {
+  padding-left: 2%;
+  padding-right: 2%;
+  clear: both;
+}
+section .xuanjiBox .xuanjilei ul {
+  height: 40px;
+  margin-bottom: 0px;
+  border-bottom: #ddd solid 1px;
+  box-sizing: border-box;
+}
+section .xuanjiBox .xuanjilei ul li {
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  line-height: 60px;
+  box-sizing: border-box;
+  float: left;
+}
+section .xuanjiBox .xianjinr {
+  margin-top: 5px;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+section .xuanjiBox .xianjinr ul {
+  margin: 0px;
+}
+section .xuanjiBox .xianjinr ul li {
+  width: 100px;
+  height: 60px;
+  border-radius: 3px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  background-color: #eee;
+  padding-left: 2px;
+}
+section .xuanjiBox .xianjinr ul li a img {
+  display: none;
+}
+section .xuanjiBox .xianjinr ul li a h1 {
+  font-size: 12px;
+}
+section .xuanjiBox .xianjinr ul li a h5 {
   font-size: 12px;
   color: #888;
 }
-section .play_zs .play-box .play_xuanji ul li a:hover {
-  color: #3399FF;
-  text-decoration: none;
-}
-section .play_zs .play-box .play_xuanji:hover {
-  overflow: auto;
-}
-section .play_zs .biaoti-lanmu {
-  background-color: #fff;
-  width: 1117px;
-  height: 45px;
-  line-height: 45px;
-  margin: 0;
-  margin-bottom: 20px;
-}
-section .play_zs .biaoti-lanmu .play_title {
-  width: 900px;
-  height: 45px;
-  margin-right: 10px;
-  float: left;
-}
-section .play_zs .biaoti-lanmu .play_title a {
-  height: 45px;
-  color: #22ee22;
-  font-weight: 900;
-  font-size: 24px;
-}
-section .play_zs .biaoti-lanmu .play_title span {
-  height: 45px;
-  margin-left: 10px;
-  font-weight: 700;
-  font-size: 20px;
-}
-section .play_zs .biaoti-lanmu .play_guanggao {
-  width: 207px;
-  height: 45px;
-  background-color: red;
-  float: left;
-}
-section .play_zs .xianlu-box {
-  width: 1110px;
-  height: 30px;
-  margin: auto;
-  line-height: 30px;
-  background-color: #fff;
-}
-section .play_zs .xianlu-box span {
-  width: 180px;
-  height: 30px;
-  color: #ff2222;
-  float: left;
-}
-section .play_zs .xianlu-box ul {
-  float: left;
-  width: 500px;
-  height: 30px;
-}
-section .play_zs .xianlu-box ul li {
-  width: 80px;
-  height: 30px;
-  margin-right: 10px;
-  border-radius: 3px;
-  border: 1px solid #999;
-  text-align: center;
-  line-height: 30px;
-  float: left;
+section .xuanjiBox .xianjinr::after {
+  content: "";
+  clear: both;
 }
 section .gengduotuijian {
   display: none;

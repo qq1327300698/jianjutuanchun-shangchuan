@@ -78,7 +78,7 @@ $(document).ready(function(){
     }
     $(".xuanjilei ul li").first().addClass('jianjileiDJ');
     $(".xianjinr ul li").each(function(i,e){
-        $(e).css("display","block");
+        $(e).css("display","inline-block");
         if(i==9)
             return false;
     })
@@ -88,7 +88,7 @@ $(document).ready(function(){
         $(".xianjinr ul li").hide();
         var qian=$(this).index()*10;
         var hou=($(this).index()+1)*10;
-        $(".xianjinr ul li").slice(qian,hou).show();
+        $(".xianjinr ul li").slice(qian,hou).css("display","inline-block");
         //function(){$(this).index();}
     })
     $(".nav .nav_num li").eq(2).click(function(event) {
