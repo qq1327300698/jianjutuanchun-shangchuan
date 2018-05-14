@@ -38,7 +38,6 @@ section .play_zs .play-box .play_xuanji ul {
 section .play_zs .play-box .play_xuanji ul li {
   width: 208px;
   height: 60px;
-  box-sizing: content-box;
   border-radius: 3px;
   float: left;
   margin-right: 26px;

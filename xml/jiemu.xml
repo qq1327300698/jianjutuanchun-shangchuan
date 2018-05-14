@@ -2,7 +2,7 @@
 <note>
     <gdg>
         <kwjd>
-            <imgs>http://raw.githubusercontent.com/qq1327300698/jianjutuanchun-tu/master/gdg/kwjd/kwjd_main.jpg</imgs>
+            <imgs>https://raw.githubusercontent.com/qq1327300698/jianjutuanchun-tu/master/gdg/kwjd/kwjd_main.jpg</imgs>
             <biaoti>坑王驾到</biaoti>
             <time>2018/5/3</time>
             <dianjiliang>{{jiemubq}}</dianjiliang>
@@ -12,19 +12,26 @@
                 <lj>http://www.iqiyi.com/v_19rr9hwzls.html</lj>
                 <d>1</d>
                 <js>异僧豪夺香楠木 员外梦走大罗天</js>
-                <images>http://raw.githubusercontent.com/qq1327300698/jianjutuanchun-tu/master/gdg/kwjd/tdx1.jpg</images>
+                <images>https://raw.githubusercontent.com/qq1327300698/jianjutuanchun-tu/master/gdg/kwjd/tdx1.jpg</images>
                 <bt>探地穴(一)</bt>
                 <biaoti>坑王驾到</biaoti>
             </jishu>
             <jishu>
-                <lj>http://www.iqiyi.com/v_19rr9hwybs.html</lj>
+                <lj>https://www.iqiyi.com/v_19rr9hwybs.html</lj>
                 <d>2</d>
                 <js>结慧缘伏珠尘散 遭恶劫金刚缚手</js>
                 <images>http://raw.githubusercontent.com/qq1327300698/jianjutuanchun-tu/master/gdg/kwjd/tdx2.jpg</images>
                 <bt>探地穴(二)</bt>
                 <biaoti>坑王驾到</biaoti>
             </jishu>
-
+            <jishu>
+                <lj>http://www.iqiyi.com/v_19rr9p5ubg.html</lj>
+                <d>3</d>
+                <js>开封府兴妖作煞 孙德龙仗剑探幽</js>
+                <images>http://raw.githubusercontent.com/qq1327300698/jianjutuanchun-tu/master/gdg/kwjd/tdx3.jpg</images>
+                <bt>探地穴(三)</bt>
+                <biaoti>坑王驾到</biaoti>
+            </jishu>
         </kwjd>
     </gdg>
 </note>
