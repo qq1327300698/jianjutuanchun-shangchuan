@@ -121,5 +121,5 @@
             }
         }
 
-    renwu("gdg","zhounian");
+    renwu("gdg","kwjd");
     // "."http://jianjutuancchun/".$rname."/".$zpm."/"."

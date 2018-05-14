@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8" />
     <title>{shipingtitle}</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
     <link href="../../../css/bootrtap-css/bootstrap.css" rel="stylesheet">
     <link href="../../../css/vue.css" rel="stylesheet" type="text/css">
     <link href="../../../css/normalize.css" rel="stylesheet" type="text/css">
     <link href="../../../css/meiTiChaXun.css" media="(max-width:768px)" rel="stylesheet" type="text/css">
     <link href="../../../css/header.css" media="(min-width:769px)" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="../../../css/footer.css">
-    <link rel="stylesheet" type="text/css" href="../../../css/shipingSection.css">
+    <link rel="stylesheet" type="text/css" href="../../../css/shipingSection.css" media="(min-width:769px)">
+    <link href="../../../css/SJ_shipingSection.css" media="(max-width:768px)" rel="stylesheet" type="text/css">
 </head>
 <body>
      <header id="headerApp">
@@ -19,10 +21,10 @@
             </div>
             <div class="userInfo">
                 <div class="weibo">
-                    <a class="weiboname" href="https://weibo.com/5175013920/profile?topnav=1&amp;wvr=6">
+                    <a class="weiboname" href="#">
                         路人甲制造微博
                     </a>
-                    <a class="logoname" href="http://jianjutuanchun.com">
+                    <a class="logoname" href="#">
                         <img alt="" src="../../../images/jianju_03.png"/>
                     </a>
                 </div>
@@ -202,28 +204,26 @@
                 </div>
             </nav>
         </header>
-        <section id="sectionApp">
+        <section>
             <div class="play_zs">
                 <div class="play-box">
-                <i style='display:none'>http://www.iqiyi.com/v_19rra5k8kc.html</i><i style='display:none'>14</i>
-                <iframe src="" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no" id="player_iframe" allowfullscreen="true"></iframe>
+                <iframe src="http://www.iqiyi.com/v_19rrct9mns.html" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no" id="player_iframe" allowfullscreen="true"></iframe>
                 <div class="play_xuanji scrollbar">
                     <ul>
-
+                        {xuanji}
                     </ul>
                 </div>
             </div>
             <div class="biaoti-lanmu">
-                <div class="play_title"><a href='../' id='kwjd'>坑王驾到</a><span>九头案（六） 莽屠夫错留铁证 慈方丈道破奸情</span></div>
+                <div class="play_title"><a href="">坑王驾到</a><span>探地穴(一) 异僧豪夺香楠木 员外梦走大罗天</span></div>
                 <div class="play_guanggao"></div>
             </div>
             <div class="xianlu-box">
-                <span>无法播放？请使用浏览器的“高速模式”观看 或 试试切换线路</span>
+                <span>无法播放？试试切换线路</span>
                 <ul>
-                    <li class="bjys">线路1</li>
+                    <li>线路1</li>
                     <li>线路2</li>
                     <li>线路3</li>
-                    <li>线路4</li>
                 </ul>
             </div>
             </div>
@@ -257,7 +257,7 @@
         </script>
         <script src="../../../js/vue.min.js">
         </script>
-        <script src="../../../js/headerSC.js">
+        <script src="../../../js/header.js">
         </script>
         <script src="../../../js/shujukz.js">
         </script>

@@ -36,6 +36,7 @@ $(document).ready(function(){
                 d=xmlDoc.getElementsByTagName(s)[0].childNodes[i].childNodes[3].childNodes[0].nodeValue;
                 js=xmlDoc.getElementsByTagName(s)[0].childNodes[i].childNodes[5].childNodes[0].nodeValue;
                 bt=xmlDoc.getElementsByTagName(s)[0].childNodes[i].childNodes[9].childNodes[0].nodeValue;
+                // alert();
             shengchengNR(lj,bt,js,img,d);
         }
     }
@@ -60,7 +61,7 @@ $(document).ready(function(){
     });
     var ids=$(".play-box i").eq(1).text();
     $("#"+ids).addClass('biankuang');
-    $(".scrollbar").scrollTop($(".scrollbar").scrollTop() + $('.biankuang').offset().top - $(".scrollbar").offset().top); --普通
+    $(".scrollbar").scrollTop($(".scrollbar").scrollTop() + $('.biankuang').offset().top - $(".scrollbar").offset().top);
     // $("#nurse").animate({ scrollTop: $("#nurse").scrollTop() + $('#tr-three').offset().top - $("#nurse").offset().top }, 1000); --有动画效果
 });
 

@@ -20,6 +20,8 @@
                             $str=fread($fp,filesize("../jiemumuban.html"));
                             foreach($zuopin as $xlj){
 
+                            $zongshu++;
+
                             // $str_1=str_replace("{biaoti}",$xlj,$str_1);
                             // $str_1=str_replace("{imgs}","<img src=".$xlj." width='250' height='300'>",$str_1);
                             switch ($xlj->getName()) {
@@ -59,6 +61,45 @@
                                 default:
                                     # code...
                                     break;
+                            }
+                            if($xlj->getName()=="jishu"){
+                                echo $zongshu;
+                                $cmkdirNR="../".$rname."/".$zpm."/".$zongshu;
+                        if(!file_exists($cmkdirNR)){
+                                mkdir($cmkdirNR,0777,true);
+                            }
+                            $pathNR="../".$rname."/".$zpm."/".$zongshu."/"."index.html";
+                            $fpNR=fopen("../shipingmuban.html","r");
+                            $strNR=fread($fpNR,filesize("../shipingmuban.html"));
+                            foreach ($xlj as $key => $value) {
+                                switch ($key) {
+                                    case "biaoti":$strNR=str_replace("{shipingbiaoti}","<a href='../' id='".$zuopin->getName()."'>".$value."</a>",$strNR);
+                                        # code...
+                                        break;
+                                        case "js":$strNR=str_replace("{shipingjianjie}",$value,$strNR);
+                                        # code...
+                                        break;
+                                        case "bt":$strNR=str_replace("{shipingbt}",$value,$strNR);
+                                        # code...
+                                        break;
+                                        case "lj":$strNR=str_replace("{ljdz}","<i style='display:none'>".$value."</i>",$strNR);
+                                        # code...
+                                        break;
+                                        case "d":$strNR=str_replace("{bianhao}","<i style='display:none'>".$value."</i>",$strNR);
+                                        # code...
+                                        break;
+
+                                    default:
+                                        # code...
+                                        break;
+                                }
+                                # code...
+                            }
+                            fclose($fpNR);
+                            $handleNR=fopen($pathNR,"wb");
+                            fwrite($handleNR,$strNR);
+                            fclose($handleNR);
+
                             }
 
                             }
