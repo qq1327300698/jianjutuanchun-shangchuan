@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Vue 测试实例 - 菜鸟教程(runoob.com)</title>
+<script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+</head>
+<body>
+<ul id="demo">
+    <li v-for="item in list" ref="list">{{item}}</li>
+</ul>
+  <script type="text/javascript">
+   new Vue({
+     el:'#demo',
+     data(){
+     return{
+       list:[0,1,2,3,4]
+     }
+     },
+     created(){
+     this.$nextTick( function() {//先渲染dom后执行console
+  console.log(this.$refs.list)//ref 被用来给元素或子组件注册引用信息。引用信息将会注册在父组件的 $refs 对象上。如果在普通的 DOM 元素上使用，引用指向的就是 DOM 元素；如果用在子组件上，引用就指向组件实例
+})
+     },
+     methods:{ }
+     })
+  </script>
+
+
+</body>
+ </html>

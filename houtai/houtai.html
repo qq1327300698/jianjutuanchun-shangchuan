@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>后台视频</title>
+    <style type="text/css">
+        .konghang{
+            height:10px;
+        }
+        body{
+            padding-top:50px;
+        }
+    </style>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <form class="form-horizontal" role="form" action="houtai.php" method="get" accept-charset="utf-8" target="_blank" id="app">
+        <div class="form-group">
+            <label for="firstname" class="col-sm-2 control-label">节目标题:</label>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" id="firstname" placeholder="请输入《节目标题》" name="jmBt" v-model.lazy.trim="jmBt">
+            </div>
+            <div class="col-sm-2">
+                <select class="form-control" v-model="jmBt">
+                    <option value="">请选择</option>
+                    <option v-for="value in duquPhpBt">{{value}}</option>
+                </select>
+            </div>
+      </div>
+      <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">节目目录:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="firstname" placeholder="请输入http://" name="jmMl" v-model="jmMl">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">节目图片:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="firstname" placeholder="请输入img://" name="jmTp" v-model="jmTp">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">节目简介:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="firstname" placeholder="请输入节目简介" name="jmJj" v-model="jmJj">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">节目标签:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="firstname" placeholder="请输入节目标签" name="jmBq" v-model="jmBq">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">视频标题:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="firstname" placeholder="请输入《视频标题》" name="spBt">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">视频连接:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="firstname" placeholder="请输入http://" name="spLj">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">视频图片:</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" id="firstname" placeholder="请输入img://" name="spTp">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">视频简介:</label>
+        <div class="col-sm-5">
+          <input type="text" class="form-control" id="firstname" placeholder="请输入视频简介" name="spJj">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="firstname" class="col-sm-2 control-label">更新时间:</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control" id="firstname" placeholder="请输入时间" v-model="sj" name="sj">
+        </div>
+        <div class="col-sm-1">
+                <button type="button" v-on:click="qsj" class="btn btn-default">取时间</button>
+        </div>
+      </div>
+      <div class="form-group">
+            <label for="firstname" class="col-sm-2 control-label">视频类别:</label>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" id="firstname" placeholder="请输入视频类别" name="spLb" v-model="spLb">
+            </div>
+            <div class="col-sm-2">
+                <button type="submit" class="btn btn-default">提交</button>
+            </div>
+      </div>
+
+    </form>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <script type="text/javascript">
+        new Vue({
+            el:"#app",
+            data:{
+              sj:"取时间",
+              duquPhpBt:showjmBt(),
+              jmBt:"",
+              jmMl:"",
+              jmTp:"",
+              jmJj:"",
+              jmBq:"",
+              spLb:"",
+            },
+            methods:{
+              qsj:function(){
+                var ls=new Date();
+                var nian=ls.getFullYear();
+                var yue=ls.getMonth()+1;
+                var ri=ls.getDate();
+                var s=ls.getHours(),f=ls.getMinutes(),m=ls.getSeconds();
+                this.sj=nian+"-"+yue+"-"+ri+" "+s+":"+f+":"+m;
+              }
+            },
+            computed:{
+              shuzu:function(){
+                return showshuju(this.jmBt);
+              },
+
+            },
+            watch:{
+              jmBt:function(){
+                var i;
+                for ( i = this.duquPhpBt.length - 1; i >= 0; i--) {
+                  if(this.jmBt==this.duquPhpBt[i]){
+                    this.jmMl=this.shuzu[2];
+                    this.jmTp=this.shuzu[3];
+                    this.jmJj=this.shuzu[4];
+                    this.jmBq=this.shuzu[5];
+                    this.spLb=this.shuzu[10];
+                    break;
+
+                  }
+
+                  }
+                if(i)
+                  this.duquPhpBt[this.duquPhpBt.length]=this.jmBt;
+
+                }
+
+              }
+
+        })
+        function showjmBt(){
+          if (window.XMLHttpRequest)
+                 {// code for IE7+, Firefox, Chrome, Opera, Safari
+                 xmlhttp=new XMLHttpRequest();
+                 }
+                 else
+                 {// code for IE6, IE5
+                 xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                 }
+                 xmlhttp.open("GET","jmBt_tj.php",false);
+                 xmlhttp.send();
+                 xmlPHP=xmlhttp.responseText.split(",");
+                 xmlPHP.pop();
+                 return xmlPHP;
+        }
+        function showshuju(str){
+          if (window.XMLHttpRequest)
+                 {// code for IE7+, Firefox, Chrome, Opera, Safari
+                 xmlhttp=new XMLHttpRequest();
+                 }
+                 else
+                 {// code for IE6, IE5
+                 xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+                 }
+                 xmlhttp.open("GET","duqu.php?q="+str,false);
+                 xmlhttp.send();
+                 return xmlhttp.responseText.split(",");
+        }
+
+    </script>
+
+</body>
+</html>

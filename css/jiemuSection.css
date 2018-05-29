@@ -14,7 +14,8 @@ section .xuanjiBox {
   box-sizing: border-box;
 }
 section .xuanjiBox .xuanjiji ul {
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 section .xuanjiBox .xuanjiji ul li {
   width: 100px;
@@ -33,6 +34,7 @@ section .xuanjiBox .xuanjilei ul {
   margin-bottom: 25px;
   border-bottom: #ddd solid 1px;
   box-sizing: border-box;
+  padding: 0;
 }
 section .xuanjiBox .xuanjilei ul li {
   width: 100px;
@@ -51,6 +53,7 @@ section .xuanjiBox .xianjinr {
 section .xuanjiBox .xianjinr ul {
   height: 60px;
   margin: 0px;
+  padding: 0;
 }
 section .xuanjiBox .xianjinr ul li {
   width: 200px;
@@ -69,8 +72,10 @@ section .xuanjiBox .xianjinr ul li a h1 {
   font-size: 12px;
 }
 section .xuanjiBox .xianjinr ul li a h5 {
+  height: 26px;
   font-size: 12px;
   color: #888;
+  overflow: hidden;
 }
 section .xuanjiBox .xianjinr ul li a:hover {
   color: #3399FF;
