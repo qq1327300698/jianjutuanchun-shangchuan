@@ -11,6 +11,8 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
      die("连接失败: " . $conn->connect_error);
 }
+mysqli_set_charset($conn,"utf8");
+
 $sql = "SELECT * FROM shiping_tb";
 $result=mysqli_query($conn, $sql);
 if(mysqli_num_rows($result)>0){

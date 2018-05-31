@@ -47,6 +47,7 @@
           die("连接失败:".$conn->connect_error);
      }
 
+mysqli_set_charset($conn,"utf8");
 
      $sql="INSERT INTO shiping_tb(jmBt,jmMl, jmTp,jmJj,jmBq,spBt,spLj,spTp,spJj,sj,spLb)
 VALUES (?,?,?,?,?,?,?,?,?,?,?);";

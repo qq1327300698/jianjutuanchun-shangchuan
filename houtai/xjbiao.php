@@ -12,6 +12,8 @@ if ($conn->connect_error) {
      die("连接失败: " . $conn->connect_error);
 }
 // 使用 sql 创建数据表
+mysqli_set_charset($conn,"utf8");
+
 $sql = "CREATE TABLE shiping_tb (
        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
        jmBt varchar(255) NOT NULL,

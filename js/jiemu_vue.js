@@ -113,7 +113,7 @@ function showsp(){
                  return xmlPHP;
 };
 function getwyBq(){
-    alert($(".logo .zhuantinr .zhuantitu img").attr("id"));
+    // alert($(".logo .zhuantinr .zhuantitu img").attr("id"));
     return $(".logo .zhuantinr .zhuantitu img").attr("id");
     // return js;
 };
