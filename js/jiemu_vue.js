@@ -92,6 +92,7 @@ function showbq(){
                  xmlhttp.send();
                  xmlPHP=xmlhttp.responseText.split(",");
                  xmlPHP;
+                 // alert(xmlPHP);
                  return xmlPHP;
 };
 function showsp(){
@@ -112,6 +113,7 @@ function showsp(){
                  return xmlPHP;
 };
 function getwyBq(){
-    return $(".logo .zhuantinr .zhuantibiaoti h1").text();
+    alert($(".logo .zhuantinr .zhuantitu img").attr("id"));
+    return $(".logo .zhuantinr .zhuantitu img").attr("id");
     // return js;
 };

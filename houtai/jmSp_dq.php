@@ -11,7 +11,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
      die("连接失败: " . $conn->connect_error);
 }
-$sql = "SELECT * FROM shiping_tb WhERE jmBt='".$q."'";
+$sql = "SELECT * FROM shiping_tb WhERE jmMl='".$q."'";
 // echo $sql;
 $result=mysqli_query($conn, $sql);
 if(mysqli_num_rows($result)>0){
