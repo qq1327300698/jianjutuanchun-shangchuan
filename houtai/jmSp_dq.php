@@ -1,7 +1,7 @@
 <?php
     $servername = "localhost";
 $username = "root";
-$password = "root";
+$password = "sunhaiwei1998";
 $dbname = "shiping_db";
 // $q = isset($_GET["q"]) ? intval($_GET["q"]) : '';
 $q=$_GET["q"];

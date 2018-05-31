@@ -2,7 +2,7 @@
 <?php
     $servername = "localhost";
 $username = "root";
-$password = "root";
+$password = "sunhaiwei1998";
 $dbname = "shiping_db";
 
 // 创建连接

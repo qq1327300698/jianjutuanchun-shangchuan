@@ -42,7 +42,7 @@
 
      echo "视频类别：";
      echo $_GET["spLb"];
-     $conn = new mysqli("localhost","root","root","shiping_db");
+     $conn = new mysqli("localhost","root","sunhaiwei1998","shiping_db");
      if($conn->connect_error){
           die("连接失败:".$conn->connect_error);
      }
