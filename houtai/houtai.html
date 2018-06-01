@@ -176,7 +176,7 @@
                  {// code for IE6, IE5
                  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
                  }
-                 xmlhttp.open("GET","duqu_Bt.php?q="+str,false);
+                 xmlhttp.open("GET","duqu_Bt.php?q="+encodeURI(str),false);
                  xmlhttp.send();
                  return xmlhttp.responseText.split(",");
         }
