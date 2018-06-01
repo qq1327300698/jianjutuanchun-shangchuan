@@ -137,6 +137,8 @@
                     this.jmJj=this.shuzu[4];
                     this.jmBq=this.shuzu[5];
                     this.spLb=this.shuzu[10];
+                    alert(this.shuzu[2]);
+                    alert(i);
                     break;
 
                   }
@@ -174,7 +176,7 @@
                  {// code for IE6, IE5
                  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
                  }
-                 xmlhttp.open("GET","duqu.php?q="+str,false);
+                 xmlhttp.open("GET","duqu_Bt.php?q="+str,false);
                  xmlhttp.send();
                  return xmlhttp.responseText.split(",");
         }
