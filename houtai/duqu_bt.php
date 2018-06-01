@@ -4,7 +4,8 @@ $username = "root";
 $password = "sunhaiwei1998";
 $dbname = "shiping_db";
 // $keyword = htmlspecialchars(urldecode($_GET['keyword']));
-$q=htmlspecialchars(urldecode($_GET["q"]));
+$q=$_GET["q"];
+// iconv("utf-8","gbk",urldecode($_POST['msg']))
 // 创建连接
 $conn = new mysqli($servername, $username, $password, $dbname);
  // 检测连接
