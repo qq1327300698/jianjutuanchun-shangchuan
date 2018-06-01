@@ -1,5 +1,5 @@
 <?php
-    $servername = "localhost";
+$servername = "localhost";
 $username = "root";
 $password = "sunhaiwei1998";
 $dbname = "shiping_db";
@@ -13,13 +13,13 @@ if ($conn->connect_error) {
 }
 mysqli_set_charset($conn,"utf8");
 
-$sql = "SELECT * FROM shiping_tb WhERE jmMl='".$q."'";
-// echo $sql;
+$sql = "SELECT * FROM shiping_tb WhERE id='".$q."'";
+
 $result=mysqli_query($conn, $sql);
 if(mysqli_num_rows($result)>0){
     while($row=mysqli_fetch_array($result)){
-        echo "<a href=./".$row["id"]."><img src='".$row["spTp"]."' width=100 height=60><h1>".$row["spBt"]."</h1><h5>".$row["spJj"]."</h5></a>";
-        echo ",";
+        echo $row["spLj"];
     }
 }
-?>
+
+ ?>

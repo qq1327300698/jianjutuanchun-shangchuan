@@ -19,6 +19,7 @@ if(mysqli_num_rows($result)>0){
     while ($row=mysqli_fetch_array($result)) {
         $cmkdir="../".$row["spLb"]."/".$row["jmMl"]."/";
         echo $cmkdir;
+        echo "<br>";
         if(!file_exists($cmkdir)){
             mkdir($cmkdir,0777,true);
         }
@@ -35,6 +36,24 @@ if(mysqli_num_rows($result)>0){
         $handle=fopen($path,"wb");
         fwrite($handle,$str);
         fclose($handle);
+
+        $cmkdir_sp="../".$row["spLb"]."/".$row["jmMl"]."/".$row["id"]."/";
+        echo $cmkdir_sp;
+        echo "<br>";
+        if(!file_exists($cmkdir_sp)){
+            mkdir($cmkdir_sp,0777,true);
+        }
+        $path_sp="../".$row["spLb"]."/".$row["jmMl"]."/".$row["id"]."/"."index.html";
+        $fp_sp=fopen("../shipingmuban.html","r");
+        $str_sp=fread($fp_sp,filesize("../shipingmuban.html"));
+        $str_sp=str_replace("{shipingtitle}",$row["spBt"]."-尖局团春-最好的相声网",$str_sp);
+        $str_sp=str_replace("{jiemubiaoti}","<a href='.,/' id='".$row["jmMl"]."'>".$row["jmBt"]."</a>",$str_sp);
+        $str_sp=str_replace("{shipingbt}","<span title='".$row["id"]."'>".$row["spBt"]."</span>",$str_sp);
+        $str_sp=str_replace("{spJj}",$row["spJj"],$str_sp);
+        fclose($fp_sp);
+        $handle_sp=fopen($path_sp,"wb");
+        fwrite($handle_sp,$str_sp);
+        fclose($handle_sp);
     }
 }
 

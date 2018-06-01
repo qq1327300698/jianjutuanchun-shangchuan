@@ -58,6 +58,7 @@ section .play_zs .play-box .play_xuanji ul li a h5 {
 section .play_zs .play-box .play_xuanji ul li a:hover {
   color: #3399FF;
   text-decoration: none;
+  cursor: pointer;
 }
 section .play_zs .play-box .play_xuanji:hover {
   overflow: auto;

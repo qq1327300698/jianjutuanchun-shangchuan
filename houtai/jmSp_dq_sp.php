@@ -18,7 +18,7 @@ $sql = "SELECT * FROM shiping_tb WhERE jmMl='".$q."'";
 $result=mysqli_query($conn, $sql);
 if(mysqli_num_rows($result)>0){
     while($row=mysqli_fetch_array($result)){
-        echo "<a href=./".$row["id"]."><img src='".$row["spTp"]."' width=100 height=60><h1>".$row["spBt"]."</h1><h5>".$row["spJj"]."</h5></a>";
+        echo "<a id='".$row["id"]."'><img src='".$row["spTp"]."' width=100 height=60 ><h1>".$row["spBt"]."</h1><h5>".$row["spJj"]."</h5></a>";
         echo ",";
     }
 }
