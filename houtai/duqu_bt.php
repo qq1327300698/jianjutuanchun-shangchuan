@@ -3,7 +3,7 @@
 $username = "root";
 $password = "sunhaiwei1998";
 $dbname = "shiping_db";
-$q=$_GET["q"];
+$q=$_REQUEST["q"];
 // 创建连接
 $conn = new mysqli($servername, $username, $password, $dbname);
  // 检测连接
