@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-05-31 15:40:51
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-06-01 18:36:48
+* @Last Modified time: 2018-06-02 09:10:50
 */
 
 'use strict';
@@ -22,7 +22,9 @@ new Vue({
 
 ljgx($(".biaoti-lanmu .play_title span").eq(0).attr("title"));
 
-
+// alert($(".bilibili-player-video-recommend-container",document.frames("frame").document).html());
+//
+alert($("#player_iframe").contents().find("body>div").html());//
 
 $(".play_xuanji ul li a").click(function() {
     $(".play_xuanji ul li").removeClass('biankuang');
@@ -94,3 +96,7 @@ function getwyBq(){
     return $(".biaoti-lanmu .play_title a").attr("id");
     // return js;
 };
+
+
+
+
