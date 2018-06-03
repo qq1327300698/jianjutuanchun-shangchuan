@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-05-31 15:40:51
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-06-02 09:10:50
+* @Last Modified time: 2018-06-03 12:47:52
 */
 
 'use strict';
@@ -24,7 +24,7 @@ ljgx($(".biaoti-lanmu .play_title span").eq(0).attr("title"));
 
 // alert($(".bilibili-player-video-recommend-container",document.frames("frame").document).html());
 //
-alert($("#player_iframe").contents().find("body>div").html());//
+// alert($("#player_iframe").contents().find("body>div").html());//
 
 $(".play_xuanji ul li a").click(function() {
     $(".play_xuanji ul li").removeClass('biankuang');
@@ -39,6 +39,7 @@ $.get("../../../houtai/duqu_lianjie.php?q="+$bqid,function(data,stauts){
     // alert(data);
     var n;
     if(data.match(/iqiyi/g)){
+        $(".xianlu-box ul li").removeClass("ljys");
         $(".xianlu-box ul li:eq(0)").hide();
         $(".play-box iframe").attr("src","http://jx.yylep.com/?url="+data);
         $(".xianlu-box ul li:eq(1)").addClass("ljys");

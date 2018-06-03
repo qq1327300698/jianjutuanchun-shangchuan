@@ -13,7 +13,7 @@ if ($conn->connect_error) {
      die("连接失败: " . $conn->connect_error);
 }
 mysqli_set_charset($conn,"utf8");
-$sql = "SELECT * from shiping_tb where id in(select max(id) from shiping_tb group by jmBt) and jmBt='坑王驾到'";
+$sql = "SELECT * from shiping_tb where id in(select max(id) from shiping_tb group by jmBt) and jmBt='".$q."'";
 $result=mysqli_query($conn, $sql);
 if(mysqli_num_rows($result)>0){
     // echo $result;
