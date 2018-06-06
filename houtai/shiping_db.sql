@@ -1,5 +1,5 @@
 ﻿# Host: localhost  (Version: 5.5.53)
-# Date: 2018-06-06 22:50:02
+# Date: 2018-06-06 22:54:10
 # Generator: MySQL-Front 5.3  (Build 4.234)
 
 /*!40101 SET NAMES utf8 */;
@@ -20,7 +20,7 @@ CREATE TABLE `shiping_tb` (
   `spLj` varchar(255) NOT NULL,
   `spTp` varchar(255) NOT NULL,
   `spJj` varchar(255) NOT NULL,
-  `sj` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `sj` timestamp NULL DEFAULT '0000-00-00 00:00:00',
   `spLb` varchar(255) NOT NULL DEFAULT '',
   `djs` bigint(20) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
