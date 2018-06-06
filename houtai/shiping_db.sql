@@ -1,5 +1,5 @@
 ﻿# Host: localhost  (Version: 5.5.53)
-# Date: 2018-06-06 23:17:04
+# Date: 2018-06-06 23:20:55
 # Generator: MySQL-Front 5.3  (Build 4.234)
 
 /*!40101 SET NAMES utf8 */;
@@ -20,8 +20,8 @@ CREATE TABLE `shiping_tb` (
   `spLj` varchar(255) NOT NULL,
   `spTp` varchar(255) NOT NULL,
   `spJj` varchar(255) NOT NULL,
-  `sj` varchar(255) DEFAULT NULL,
-  `spLb` timestamp ,
+  `sj` timestamp NOT NULL CURRENT_TIMESTAMP,
+  `spLb` varchar(255) DEFAULT NULL,
   `djs` bigint(20) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=105 DEFAULT CHARSET=utf8;
