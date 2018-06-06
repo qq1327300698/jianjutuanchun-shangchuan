@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2018-05-31 15:40:51
 * @Last Modified by:   Marte
-* @Last Modified time: 2018-06-03 12:47:52
+* @Last Modified time: 2018-06-06 22:21:35
 */
 
 'use strict';
@@ -21,7 +21,7 @@ new Vue({
 
 
 ljgx($(".biaoti-lanmu .play_title span").eq(0).attr("title"));
-
+zjdjs($(".biaoti-lanmu .play_title span").eq(0).attr("title"));
 // alert($(".bilibili-player-video-recommend-container",document.frames("frame").document).html());
 //
 // alert($("#player_iframe").contents().find("body>div").html());//
@@ -30,7 +30,12 @@ $(".play_xuanji ul li a").click(function() {
     $(".play_xuanji ul li").removeClass('biankuang');
     $(this).parent("li").addClass('biankuang');
     ljgx($(this).attr("id"));
+    zjdjs($(this).attr("id"));
 });
+
+function zjdjs($id){
+    $.get("../../../houtai/zjdjs.php?q="+$id,function(){});
+}
 
 function ljgx($bqid){
 // alert($bqid);
@@ -62,7 +67,7 @@ $.get("../../../houtai/duqu_lianjie.php?q="+$bqid,function(data,stauts){
 
 
     }
-    if(data.match(/bilibili/g)){
+    if(data.match(/player/g)){
     // alert(n);
         $(".xianlu-box ul li:gt(0)").hide();
         $(".xianlu-box ul li:eq(0)").addClass('ljys');
@@ -90,6 +95,7 @@ function showsp(){
                  // alert(xmlhttp.responseText);
                  var xmlPHP=xmlhttp.responseText.split(",");
                  xmlPHP.pop();
+                 // alert(xmlPHP);
                  return xmlPHP;
 };
 function getwyBq(){

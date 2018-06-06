@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>梁山传奇——尖局团春——路人甲制造</title>
+    <meta name="renderer" content="webkit">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <link href="../../css/bootrtap-css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../css/jiemuHaerder.css" media="(min-width:769px)">
+    <link rel="stylesheet" type="text/css" href="../../css/jiemuSection.css" media="(min-width:769px)">
+    <link rel="stylesheet" type="text/css" href="../../css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../../css/vue.css">
+    <link href="../../css/SJ_jiemuHaerder.css" media="(max-width:768px)" rel="stylesheet" type="text/css">
+    <link href="../../css/SJ_jiemuSection.css" media="(max-width:768px)" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header id="headerApp">
+            <div class="userInfo-img">
+            </div>
+            <div class="userInfo-gai">
+            </div>
+            <div class="userInfo">
+                <div class="weibo">
+                    <a class="weiboname" href="http://jianjutuanchun.com">
+                        主页
+                    </a>
+                    <a class="logoname" href="#">
+                        <img alt="" src="../../images/jianju_03.png"/>
+                    </a>
+                </div>
+                <div class="userZhongxin">
+                    <ul>
+                        <li>
+                            <input class="form-control shurukuang" id="guanjianzi" placeholder="关键字输入" type="text">
+                            </input>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img alt="" class="sousuotubiao" src="../../images/sousuo.png"/>
+                            </a>
+                        </li>
+                        <li class="kongge">
+                        </li>
+                        <li>
+                            <a href="#">
+                                历史记录
+                            </a>
+                        </li>
+                        <li class="kongge">
+                        </li>
+                        <li class="username">
+                            <a href="#">
+                                个人中心
+                            </a>
+                        </li>
+                        <li class="usertu">
+                            <span class="glyphicon glyphicon-user">
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo">
+                <div class="zhuantinr">
+                    <div class="zhuantitu"><img src='https://raw.githubusercontent.com/qq1327300698/jianjutuanchun-tu/master/xw/lscq/lscq_main.jpg' id='lscq' width="240" height="290"></div>
+                    <div class="zhuantibiaoti"><h1>梁山传奇</h1><span v-for="value in jiemubq">{{value}}</span></div>
+                    <div class="zhuantitime"><span>更新时间：2018-06-04 13:08:27</span><span>点击量：0</span></div>
+                    <div class="zhuantijianjie"><p>简介：一段单口相声，讲述了水浒传的另一条时间线，在于故事有不同于故事，让人听得入迷</p></div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="nav_num">
+                    <li class="num zuopinxqDJ">
+                        <a href="#">
+                            <div class="num_name yanse">
+                                作品详情
+                            </div>
+                        </a>
+                    </li>
+                    <li class="num num_kongge">
+                    </li>
+                    <li class="num">
+                        <a href="#">
+                            <div class="num_name">
+                                相关视频
+                            </div>
+                        </a>
+                    </li>
+                    <li class="num num_kongge">
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section id="sectionApp">
+            <div class="xuanjiBox">
+                <div class="xuanjiji">
+                    <ul>
+                        <li><a href="#">第一季</a></li>
+                    </ul>
+                </div>
+                <div class="xuanjilei scrollbar" >
+                    <ul v-bind:style="{width:leiwd+'%'}">
+                    <!--  <template v-for="(value,index) in spshuzu" >
+                         <li class="index">
+                             <a v-on:click="btnClick(index)" >{{index}}</a>
+                         </li>
+                     </template> -->
+                    <li v-for="(value,index) in spshuzu" v-if="index<changdu-2" ref="spshuzu" v-on:click="btnClick(index)">第{{value+1}}集-第{{value+10}}集</li>
+                    <li v-for="(value,index) in spshuzu" ref="spshuzu" v-if="(value%10)!=0" v-on:click="btnClick(index-1)">第{{(index-1)*10+1}}集-第{{value+1}}集</li>
+                    <li v-for="(value,index) in spshuzu" ref="spshuzu"  v-if="index==changdu-1&&value==zhcd&&(value+1)%10==1" v-on:click="btnClick(index-1)">第{{zhcd+1}}集</li>
+                    </ul>
+
+                </div>
+                <div class="xianjinr" >
+                    <ul>
+                        <li v-for="(value,index) in nr" v-html="value" v-if="index>=dishu&&index<=gaoshu">
+                            {{value}}
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="gengduotuijian">
+                <div class="tuijianbiaoti">
+                    <h1>更多推荐</h1>
+                    <span><a href="#">更多</a></span>
+                </div>
+                <div class="tuijiannr">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_nr">
+               <p>路人甲制造出品，一定是特莫精品。</p>
+            <p>所有内容转载自网络，侵权必删。</p>
+            </div>
+        </footer>
+        <script src="../../js/vue.min.js"></script>
+        <script src="../../js/jquery-3.3.1.min.js"></script>
+        <script src="../../js/jiemu_vue.js"></script>
+</body>
+</html>

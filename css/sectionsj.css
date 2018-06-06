@@ -78,6 +78,7 @@ section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a {
   text-decoration: none;
 }
 section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a img {
+  height: 108px;
   width: 100%;
 }
 section .tuijian .tuijian_shuju .tuijian_kuang .tuijian_neirong a .nr_xx {
@@ -155,6 +156,7 @@ section .zq .gszs .gszq_kuang .gszq_neirong a {
 }
 section .zq .gszs .gszq_kuang .gszq_neirong a img {
   width: 100%;
+  height: 108px;
 }
 section .zq .gszs .gszq_kuang .gszq_neirong a .nr_xx {
   width: 100%;
@@ -169,6 +171,7 @@ section .zq .gszs .gszq_kuang .gszq_neirong a .nr_xx {
 section .zq .gszs .gszq_kuang .gszq_neirong a .nr_xx .title {
   color: #eee;
   height: 41px;
+  overflow: hidden;
   transition: color 0.5s;
   margin-top: 3px;
   margin-bottom: 3px;

@@ -211,154 +211,29 @@
         <section id="sectionApp">
             <div class="tuiguang">
                 <div class="carousel-box">
-                    <div class="carousel-module">
-                        <ul class="carousel-ul">
-                            <li>
-                                <div>
-                                    <a href="#">
-                                        <img alt="" src="images/section/4bb9477c4b883dcb1e19e17c0ae75435.jpg"/>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <a href="#">
-                                        <img alt="" src="images/section/05a46f5d56cf0ba0f4f192ce59b52fd8.jpg"/>
-                                    </a>
-                                </div>
-                            </li>
-                            <li>
-                                <div>
-                                    <a href="#">
-                                        <img alt="" src="images/section/6cdf299dc4acc1d7b63fe4e042bd880a.jpg"/>
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="carousel-biaoqian">
-                            <li>
-                                <a href="">
-                                    <div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="fg_tz">
+                        <div><a v-bind:href="sjlj">跳转到视频区</a><br><span>点击下面空白暂停</span></div>
                     </div>
+                    <iframe v-bind:src="sjsp" frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no" id="player_iframe" name="frame" allowfullscreen="true"></iframe>
                 </div>
                 <div class="recommend-module">
-                    <div class="groom-module">
-                        <a href="./gdg/kwjd/" title="坑王驾到">
-                            <img alt="" src="https://raw.githubusercontent.com/qq1327300698/jianjutuanchun-tu/master/gdg/logo/kwjd_logo_05.jpg">
-                                <div class="card-mark">
-                                    <p class="title">
-                                        坑王驾到
-                                    </p>
-                                    <p class="gtime">
-                                        更新时间：2018/4/18
-                                    </p>
-                                    <p class="play">
-                                        播放：2015次
-                                    </p>
-                                </div>
-                            </img>
-                        </a>
+                    <div class="groom-module" >
+                        <jmbox v-bind:jmboxms="jmxx('坑王驾到')"></jmbox>
                     </div>
                     <div class="groom-module">
-                        <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
-                            <img alt="" src="https://raw.githubusercontent.com/qq1327300698/jianjutuanchun-tu/master/gdg/cnn/cnn_1.jpg">
-                                <div class="card-mark">
-                                    <p class="title">
-                                        【京紫点评】看好的动画，就像与作品谈恋爱
-                                    </p>
-                                    <p class="gtime">
-                                        更新时间：2018/4/18
-                                    </p>
-                                    <p class="play">
-                                        播放：2015次
-                                    </p>
-                                </div>
-                            </img>
-                        </a>
+                        <jmbox v-bind:jmboxms="jmxx('丑娘娘')"></jmbox>
                     </div>
                     <div class="groom-module">
-                        <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
-                            <img alt="" src="https://raw.githubusercontent.com/qq1327300698/jianjutuanchun-tu/master/gdg/dgxn/dgxn0001.jpg">
-                                <div class="card-mark">
-                                    <p class="title">
-                                        【京紫点评】看好的动画，就像与作品谈恋爱
-                                    </p>
-                                    <p class="gtime">
-                                        更新时间：2018/4/18
-                                    </p>
-                                    <p class="play">
-                                        播放：2015次
-                                    </p>
-                                </div>
-                            </img>
-                        </a>
+                        <jmbox v-bind:jmboxms="jmxx('我字系列')"></jmbox>
                     </div>
                     <div class="groom-module">
-                        <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
-                            <img alt="" src="images/imgt.jpg">
-                                <div class="card-mark">
-                                    <p class="title">
-                                        【京紫点评】看好的动画，就像与作品谈恋爱
-                                    </p>
-                                    <p class="gtime">
-                                        更新时间：2018/4/18
-                                    </p>
-                                    <p class="play">
-                                        播放：2015次
-                                    </p>
-                                </div>
-                            </img>
-                        </a>
+                        <jmbox v-bind:jmboxms="jmxx('血清丢失案')"></jmbox>
                     </div>
                     <div class="groom-module">
-                        <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
-                            <img alt="" src="images/imgt.jpg">
-                                <div class="card-mark">
-                                    <p class="title">
-                                        【京紫点评】看好的动画，就像与作品谈恋爱
-                                    </p>
-                                    <p class="gtime">
-                                        更新时间：2018/4/18
-                                    </p>
-                                    <p class="play">
-                                        播放：2015次
-                                    </p>
-                                </div>
-                            </img>
-                        </a>
+                        <jmbox v-bind:jmboxms="jmxx('铁甲将军')"></jmbox>
                     </div>
                     <div class="groom-module">
-                        <a href="#" title="【京紫点评】看好的动画，就像与作品谈恋爱">
-                            <img alt="" src="images/imgt.jpg">
-                                <div class="card-mark">
-                                    <p class="title">
-                                        【京紫点评】看好的动画，就像与作品谈恋爱
-                                    </p>
-                                    <p class="gtime">
-                                        更新时间：2018/4/18
-                                    </p>
-                                    <p class="play">
-                                        播放：2015次
-                                    </p>
-                                </div>
-                            </img>
-                        </a>
+                        <jmbox v-bind:jmboxms="jmxx('当行论')"></jmbox>
                     </div>
                 </div>
             </div>
@@ -368,72 +243,16 @@
                 <div class="tuijian_shuju">
                     <ul class="tuijian_kuang">
                         <li class="tuijian_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('杀人种瓜（一）')"></spbox>
                         </li>
                         <li class="tuijian_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('当行论（一）')"></spbox>
                         </li>
                         <li class="tuijian_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('小眼看世界（一）')"></spbox>
                         </li>
                         <li class="tuijian_neirong" v="">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('我是科学家')"></spbox>
                         </li>
                         <li class="tuijian_guanggao">
                             <a href="#">
@@ -449,140 +268,28 @@
                 <div class="gszs">
                     <ul class="gszq_kuang">
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('探地穴(一)')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('九头案（一） ')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('苏三（一）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('窦公训女（一）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('你这一辈子（一）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('我是科学家')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('我要读书')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('张小乙（一）')"></spbox>
                         </li>
                     </ul>
                 </div>
@@ -597,140 +304,28 @@
                 <div class="gszs">
                     <ul class="gszq_kuang">
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('卖吊票（一）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('汾河湾（一）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('我要幸福（一）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('学聋哑（一）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('小眼看世界（一）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('当行论（一）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('树没叶（一）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('学歌曲（一）')"></spbox>
                         </li>
                     </ul>
                 </div>
@@ -743,140 +338,28 @@
                 <div class="gszs">
                     <ul class="gszq_kuang">
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('血清丢失案（上）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('血清丢失案（下）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('杀人种瓜（一）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('杀人种瓜（二）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('杀人种瓜（三）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('梁山传奇（一）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('侦探笔记（一）')"></spbox>
                         </li>
                         <li class="gszq_neirong">
-                            <a href="#">
-                                <img alt="" height="125" src="images/imgt.jpg" width="200">
-                                    <div class="nr_xx">
-                                        <p class="title">
-                                            【京紫点评】看好的动画，就像与作品谈恋爱
-                                        </p>
-                                        <p class="gtime">
-                                            更新时间：2018/4/18
-                                        </p>
-                                        <p class="play">
-                                            播放：2015次
-                                        </p>
-                                    </div>
-                                </img>
-                            </a>
+                            <spbox v-bind:spboxms="spxx('西游妄谈（一）')"></spbox>
                         </li>
                     </ul>
                 </div>
@@ -897,10 +380,11 @@
         </script>
         <script src="js/vue.min.js">
         </script>
-        <script src="js/header.js">
+        <script src="js/index_vue.js"></script>
+        <!-- <script src="js/header.js">
         </script>
         <script src="js/section.js">
-        </script>
+        </script> -->
         <script src="js/shujukz.js">
         </script>
     </body>

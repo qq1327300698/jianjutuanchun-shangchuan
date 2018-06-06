@@ -18,7 +18,7 @@ $result=mysqli_query($conn, $sql);
 if(mysqli_num_rows($result)>0){
     // echo $result;
     while($row=mysqli_fetch_array($result)){
-        echo $row["id"].",".$row["jmBt"].",".$row["jmMl"].",".$row["jmTp"].",".$row["jmJj"].",".$row["jmBq"].",".$row["spBt"].",".$row["spLj"].",".$row["spJj"].",".$row["sj"].",".$row["spLb"];
+        echo $row["id"].",".$row["jmBt"].",".$row["jmMl"].",".$row["jmTp"].",".$row["jmJj"].",".$row["jmBq"].",".$row["spBt"].",".$row["spLj"].",".$row["spTp"].",".$row["spJj"].",".$row["sj"].",".$row["spLb"].",".$row["djs"];
 
     }
 }
