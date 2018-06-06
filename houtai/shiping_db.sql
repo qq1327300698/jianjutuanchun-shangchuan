@@ -20,7 +20,7 @@ CREATE TABLE `shiping_tb` (
   `spLj` varchar(255) NOT NULL,
   `spTp` varchar(255) NOT NULL,
   `spJj` varchar(255) NOT NULL,
-  `sj` timestamp NOT NULL CURRENT_TIMESTAMP,
+  `sj` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `spLb` varchar(255) DEFAULT NULL,
   `djs` bigint(20) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
