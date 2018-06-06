@@ -3,7 +3,7 @@ Vue.component('jmbox', {
   template:'<a v-bind:href=lujin v-bind:title=jmboxms[1]><img alt="" v-bind:src=jmboxms[8]><div class="card-mark"><p class="title">{{"【"+jmboxms[1]+"】"+" "+jmboxms[4].substr(0,20)}}</p><p class="gtime">更新时间：{{jmboxms[10].substr(0,10)}}</p><p class="play">播放：{{jmboxms[12]}}次</p></div></img></a>',
   data: function () {
     return {
-      lujin: "./"+this.jmboxms[12]+"/"+this.jmboxms[2]
+      lujin: "./"+this.jmboxms[11]+"/"+this.jmboxms[2]
     }
   },
 
@@ -13,7 +13,7 @@ Vue.component('spbox', {
   template:'<a v-bind:href=splujin v-bind:title=spboxms[1]><img alt="" v-bind:src=spboxms[8]><div class="nr_xx"><p class="title">{{"【"+spboxms[6]+"】"+" "+spboxms[9].substr(0,20)}}</p><p class="gtime">更新时间：{{spboxms[10].substr(0,10)}}</p><p class="play">播放：{{spboxms[12]}}次</p></div></img></a>',
   data: function () {
     return {
-      splujin: "./"+this.spboxms[12]+"/"+this.spboxms[2]+"/"+this.spboxms[0]
+      splujin: "./"+this.spboxms[11]+"/"+this.spboxms[2]+"/"+this.spboxms[0]
     }
   },
 
