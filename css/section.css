@@ -205,6 +205,67 @@ section .zq .ph {
   border-radius: 3px;
   float: left;
 }
+section .zq .ph ul {
+  padding-left: 0px;
+}
+section .zq .ph ul li a b {
+  width: 20px;
+  height: 20px;
+  float: left;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 20px;
+  background-color: #ddd;
+  margin-right: 5px;
+}
+section .zq .ph ul li a div {
+  width: 275px;
+  height: 50px;
+  float: left;
+  overflow: hidden;
+}
+section .zq .ph ul li a div span {
+  font-size: 12px;
+}
 section .zq .ph ul li:first-child {
-  background-color: red;
+  height: 50px;
+  margin-bottom: 5px;
+}
+section .zq .ph ul li:first-child a b {
+  width: 20px;
+  height: 20px;
+  float: left;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 20px;
+  background-color: #ADFF2F;
+}
+section .zq .ph ul li:first-child a img {
+  width: 90px;
+  height: 50px;
+  float: left;
+  border-radius: 3px;
+}
+section .zq .ph ul li:first-child a div {
+  width: 180px;
+  height: 50px;
+  margin-left: 5px;
+  float: left;
+}
+section .zq .ph ul li:first-child a div h5 {
+  height: 15px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+section .zq .ph ul li:first-child a div div {
+  height: 30px;
+  margin-left: 0px;
+  font-size: 12px;
+  overflow: hidden;
+}
+section .zq .ph ul li:nth-child(2) b {
+  background-color: #ADFF2F;
+}
+section .zq .ph ul li:nth-child(3) b {
+  background-color: #ADFF2F;
 }
