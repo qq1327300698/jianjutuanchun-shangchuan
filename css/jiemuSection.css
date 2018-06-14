@@ -108,6 +108,7 @@ section .gengduotuijian .tuijiannr ul {
   height: 215px;
   margin-top: 25px;
   margin-bottom: 0;
+  padding-left: 0;
 }
 section .gengduotuijian .tuijiannr ul li {
   width: 160px;
